@@ -1,0 +1,46 @@
+{
+  "Metadata": {
+    "title": "Hồ sơ năng lực | Portfolio",
+    "description": "Portfolio cá nhân — dự án, kỹ năng và kinh nghiệm."
+  },
+  "Nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "projects": "Dự án",
+    "experience": "Kinh nghiệm",
+    "contact": "Liên hệ"
+  },
+  "LocaleSwitcher": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "en": "Tiếng Anh"
+  },
+  "Hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Tên của bạn",
+    "role": "Lập trình viên Frontend",
+    "tagline": "Tôi xây dựng những giao diện web đẹp và dễ sử dụng.",
+    "ctaProjects": "Xem dự án",
+    "ctaContact": "Liên hệ với tôi"
+  },
+  "About": {
+    "title": "Giới thiệu",
+    "body": "Mô tả ngắn về bản thân, định hướng nghề nghiệp và những gì bạn đam mê."
+  },
+  "Projects": {
+    "title": "Dự án nổi bật",
+    "viewProject": "Xem chi tiết"
+  },
+  "Experience": {
+    "title": "Kinh nghiệm làm việc"
+  },
+  "Contact": {
+    "title": "Liên hệ",
+    "description": "Bạn có một dự án trong đầu? Hãy nhắn cho tôi.",
+    "email": "Email",
+    "send": "Gửi tin nhắn"
+  },
+  "Footer": {
+    "rights": "Đã đăng ký bản quyền."
+  }
+}

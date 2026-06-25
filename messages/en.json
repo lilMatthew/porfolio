@@ -1,0 +1,46 @@
+{
+  "Metadata": {
+    "title": "Portfolio",
+    "description": "Personal portfolio — projects, skills and experience."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "vi": "Vietnamese",
+    "en": "English"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm",
+    "name": "Your Name",
+    "role": "Frontend Developer",
+    "tagline": "I build beautiful and accessible web interfaces.",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch"
+  },
+  "About": {
+    "title": "About",
+    "body": "A short description about yourself, your career direction, and what you are passionate about."
+  },
+  "Projects": {
+    "title": "Featured projects",
+    "viewProject": "View details"
+  },
+  "Experience": {
+    "title": "Work experience"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Have a project in mind? Drop me a message.",
+    "email": "Email",
+    "send": "Send message"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}
