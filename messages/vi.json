@@ -1,46 +1,78 @@
 {
   "Metadata": {
-    "title": "Hồ sơ năng lực | Portfolio",
+    "title": "Tên của bạn — Web Designer & Lập trình viên Front-end",
     "description": "Portfolio cá nhân — dự án, kỹ năng và kinh nghiệm."
   },
   "Nav": {
-    "home": "Trang chủ",
-    "about": "Giới thiệu",
-    "projects": "Dự án",
-    "experience": "Kinh nghiệm",
-    "contact": "Liên hệ"
+    "home": "trang-chủ",
+    "works": "dự-án",
+    "about": "giới-thiệu",
+    "contacts": "liên-hệ"
   },
   "LocaleSwitcher": {
     "label": "Ngôn ngữ",
-    "vi": "Tiếng Việt",
-    "en": "Tiếng Anh"
+    "vi": "VI",
+    "en": "EN"
   },
   "Hero": {
-    "greeting": "Xin chào, tôi là",
-    "name": "Tên của bạn",
-    "role": "Lập trình viên Frontend",
-    "tagline": "Tôi xây dựng những giao diện web đẹp và dễ sử dụng.",
-    "ctaProjects": "Xem dự án",
-    "ctaContact": "Liên hệ với tôi"
+    "headline": "{name} là một <hl>web designer</hl> và <hl>lập trình viên front-end</hl>",
+    "subtitle": "Tôi xây dựng những website responsive nơi công nghệ gặp gỡ sự sáng tạo.",
+    "cta": "Liên hệ với tôi",
+    "currentlyWorking": "Đang thực hiện",
+    "currentProject": "Portfolio"
   },
-  "About": {
-    "title": "Giới thiệu",
-    "body": "Mô tả ngắn về bản thân, định hướng nghề nghiệp và những gì bạn đam mê."
+  "Quote": {
+    "text": "Quyền lực càng lớn thì hóa đơn tiền điện càng cao",
+    "author": "Dr. Who"
   },
   "Projects": {
-    "title": "Dự án nổi bật",
-    "viewProject": "Xem chi tiết"
+    "title": "dự-án",
+    "viewAll": "Xem tất cả",
+    "live": "Truy cập",
+    "cached": "Bản lưu",
+    "items": {
+      "chertnodes": {
+        "title": "ChertNodes",
+        "description": "Dịch vụ hosting máy chủ Minecraft"
+      },
+      "protectx": {
+        "title": "ProtectX",
+        "description": "Bot chống crash cho Discord"
+      },
+      "kahoot": {
+        "title": "Kahoot Answers Viewer",
+        "description": "Xem đáp án cho bài quiz Kahoot của bạn"
+      }
+    }
   },
-  "Experience": {
-    "title": "Kinh nghiệm làm việc"
+  "Skills": {
+    "title": "kỹ-năng",
+    "categories": {
+      "languages": "Ngôn ngữ",
+      "databases": "Cơ sở dữ liệu",
+      "tools": "Công cụ",
+      "other": "Khác",
+      "frameworks": "Frameworks"
+    }
   },
-  "Contact": {
-    "title": "Liên hệ",
-    "description": "Bạn có một dự án trong đầu? Hãy nhắn cho tôi.",
-    "email": "Email",
-    "send": "Gửi tin nhắn"
+  "About": {
+    "title": "giới-thiệu",
+    "greeting": "Xin chào, tôi là {name}!",
+    "body": "Tôi là một lập trình viên front-end tự học. Tôi xây dựng những website responsive, dễ tiếp cận từ con số 0 và biến chúng thành trải nghiệm hiện đại, thân thiện với người dùng. Tôi yêu thích việc kết hợp sự sáng tạo và kiến thức vào mỗi dự án, và luôn sẵn sàng học hỏi những công nghệ, framework mới nhất.",
+    "readMore": "Xem thêm"
+  },
+  "Contacts": {
+    "title": "liên-hệ",
+    "intro": "Tôi quan tâm đến các cơ hội freelance. Tuy nhiên, nếu bạn có yêu cầu hoặc câu hỏi khác, đừng ngần ngại liên hệ với tôi.",
+    "messageTitle": "Nhắn tin cho tôi",
+    "supportTitle": "Tìm tôi tại đây",
+    "discord": "Discord",
+    "email": "Email"
   },
   "Footer": {
-    "rights": "Đã đăng ký bản quyền."
+    "tagline": "Web designer và lập trình viên front-end.",
+    "media": "Mạng xã hội",
+    "rights": "Đã đăng ký bản quyền.",
+    "madeBy": "Thực hiện bởi {name}"
   }
 }

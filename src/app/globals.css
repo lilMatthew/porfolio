@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
+/*
+  Portfolio design tokens — dark "developer/terminal" theme with a violet accent,
+  matching the Figma. Edit these values to re-skin the whole site.
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1e1e1e; /* page background */
+  --surface: #252525; /* cards / panels */
+  --surface-2: #2d2d2d; /* nested chips / inputs */
+  --border: #353535; /* hairline borders */
+  --foreground: #ededed; /* primary text */
+  --muted: #8a8a8a; /* secondary text */
+  --accent: #8b5cf6; /* violet highlight */
+  --accent-strong: #7c3aed;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Thin custom scrollbar to match the dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
 }

@@ -1,46 +1,78 @@
 {
   "Metadata": {
-    "title": "Portfolio",
+    "title": "Your Name — Web Designer & Front-end Developer",
     "description": "Personal portfolio — projects, skills and experience."
   },
   "Nav": {
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "experience": "Experience",
-    "contact": "Contact"
+    "home": "home",
+    "works": "works",
+    "about": "about-me",
+    "contacts": "contacts"
   },
   "LocaleSwitcher": {
     "label": "Language",
-    "vi": "Vietnamese",
-    "en": "English"
+    "vi": "VI",
+    "en": "EN"
   },
   "Hero": {
-    "greeting": "Hi, I'm",
-    "name": "Your Name",
-    "role": "Frontend Developer",
-    "tagline": "I build beautiful and accessible web interfaces.",
-    "ctaProjects": "View projects",
-    "ctaContact": "Get in touch"
+    "headline": "{name} is a <hl>web designer</hl> and <hl>front-end developer</hl>",
+    "subtitle": "I craft responsive websites where technologies meet creativity.",
+    "cta": "Contact me",
+    "currentlyWorking": "Currently working on",
+    "currentProject": "Portfolio"
   },
-  "About": {
-    "title": "About",
-    "body": "A short description about yourself, your career direction, and what you are passionate about."
+  "Quote": {
+    "text": "With great power comes great electricity bill",
+    "author": "Dr. Who"
   },
   "Projects": {
-    "title": "Featured projects",
-    "viewProject": "View details"
+    "title": "projects",
+    "viewAll": "View all",
+    "live": "Live",
+    "cached": "Cached",
+    "items": {
+      "chertnodes": {
+        "title": "ChertNodes",
+        "description": "Minecraft servers hosting"
+      },
+      "protectx": {
+        "title": "ProtectX",
+        "description": "Discord anti-crash bot"
+      },
+      "kahoot": {
+        "title": "Kahoot Answers Viewer",
+        "description": "Get answers to your kahoot quiz"
+      }
+    }
   },
-  "Experience": {
-    "title": "Work experience"
+  "Skills": {
+    "title": "skills",
+    "categories": {
+      "languages": "Languages",
+      "databases": "Databases",
+      "tools": "Tools",
+      "other": "Other",
+      "frameworks": "Frameworks"
+    }
   },
-  "Contact": {
-    "title": "Contact",
-    "description": "Have a project in mind? Drop me a message.",
-    "email": "Email",
-    "send": "Send message"
+  "About": {
+    "title": "about-me",
+    "greeting": "Hello, I'm {name}!",
+    "body": "I'm a self-taught front-end developer. I build accessible, responsive websites from scratch and turn them into modern, user-friendly experiences. I love combining creativity and knowledge into every project, and I'm always eager to learn the newest technologies and frameworks.",
+    "readMore": "Read more"
+  },
+  "Contacts": {
+    "title": "contacts",
+    "intro": "I'm interested in freelance opportunities. However, if you have another request or question, don't hesitate to contact me.",
+    "messageTitle": "Message me here",
+    "supportTitle": "Find me here",
+    "discord": "Discord",
+    "email": "Email"
   },
   "Footer": {
-    "rights": "All rights reserved."
+    "tagline": "Web designer and front-end developer.",
+    "media": "Media",
+    "rights": "All rights reserved.",
+    "madeBy": "Made by {name}"
   }
 }
