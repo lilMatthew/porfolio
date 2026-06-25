@@ -1,34 +1,42 @@
 /**
  * Project metadata. The `id` maps to translatable title/description under the
- * `Projects.items.<id>` namespace in `messages/*.json`. Tags are tech names
- * (not translated). Swap images/links for your real projects.
+ * `Projects.items.<id>` namespace in `messages/*.json`. Tags/period are not
+ * translated. Add an `image` (e.g. "/portfolio/uniclove.png") to show a real
+ * screenshot; otherwise a generated gradient banner is rendered.
  */
 export type Project = {
   id: string;
-  image: string;
+  period: string;
+  image?: string;
   tags: string[];
   liveUrl?: string;
-  cachedUrl?: string;
+  repoUrl?: string;
 };
 
 export const projects: Project[] = [
   {
-    id: "chertnodes",
-    image: "/portfolio/project-chertnodes.png",
-    tags: ["HTML", "SCSS", "Python Flask"],
-    liveUrl: "#",
-    cachedUrl: "#",
+    id: "uniclove",
+    period: "04/2025 – 08/2025",
+    tags: ["React Native", "TypeScript", "Redux Toolkit", "Reanimated", "WebSocket"],
   },
   {
-    id: "protectx",
-    image: "/portfolio/project-protectx.jpg",
-    tags: ["Node.js", "Express", "Discord.js"],
-    liveUrl: "#",
+    id: "dms",
+    period: "08/2025 – 10/2025",
+    tags: ["React Native", "TypeScript", "Redux Toolkit", "Axios", "RN Maps"],
   },
   {
-    id: "kahoot",
-    image: "/portfolio/project-kahoot.jpg",
-    tags: ["CSS", "Express", "Node.js"],
-    liveUrl: "#",
+    id: "warehouse",
+    period: "10/2025 – 12/2025",
+    tags: ["React Native", "TypeScript", "Redux Toolkit", "React Hook Form"],
+  },
+  {
+    id: "saleorder",
+    period: "01/2026 – 04/2026",
+    tags: ["React Native", "TypeScript", "Redux Toolkit", "Axios", "MMKV"],
+  },
+  {
+    id: "purchaseorder",
+    period: "01/2026 – 04/2026",
+    tags: ["React Native", "TypeScript", "Axios", "MMKV"],
   },
 ];

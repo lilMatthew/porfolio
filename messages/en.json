@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Your Name — Web Designer & Front-end Developer",
-    "description": "Personal portfolio — projects, skills and experience."
+    "title": "lilmatthew.dev",
+    "description": "Portfolio of Nguyễn Hải Sơn — React Native developer building cross-platform mobile apps."
   },
   "Nav": {
     "home": "home",
@@ -15,33 +15,41 @@
     "en": "EN"
   },
   "Hero": {
-    "headline": "{name} is a <hl>web designer</hl> and <hl>front-end developer</hl>",
-    "subtitle": "I craft responsive websites where technologies meet creativity.",
+    "headline": "{name} is a <hl>React Native developer</hl> building <hl>cross-platform mobile apps</hl>",
+    "subtitle": "I craft responsive, high-quality mobile applications with React Native & TypeScript.",
     "cta": "Contact me",
-    "currentlyWorking": "Currently working on",
-    "currentProject": "Portfolio"
+    "currentlyWorking": "Currently",
+    "currentProject": "Mobile Dev @ APUS Vietnam"
   },
   "Quote": {
-    "text": "With great power comes great electricity bill",
-    "author": "Dr. Who"
+    "text": "Aspiring to become a Mobile Engineer capable of delivering end-to-end solutions.",
+    "author": "Nguyễn Hải Sơn"
   },
   "Projects": {
     "title": "projects",
     "viewAll": "View all",
     "live": "Live",
-    "cached": "Cached",
+    "repo": "Code",
     "items": {
-      "chertnodes": {
-        "title": "ChertNodes",
-        "description": "Minecraft servers hosting"
+      "uniclove": {
+        "title": "Uniclove",
+        "description": "A dating & social app with swipe-based matching, real-time messaging (WebSocket), and premium membership, built on a microservices architecture."
       },
-      "protectx": {
-        "title": "ProtectX",
-        "description": "Discord anti-crash bot"
+      "dms": {
+        "title": "Distribution Management System",
+        "description": "ERP mobile app for sales, warehousing and distribution, with GPS-based field check-in, route visualization and a layered service architecture."
       },
-      "kahoot": {
-        "title": "Kahoot Answers Viewer",
-        "description": "Get answers to your kahoot quiz"
+      "warehouse": {
+        "title": "Warehouse Management System",
+        "description": "Multi-company warehouse app: goods receipt, picking/delivery, stock-taking and order tracking with reusable scan-driven forms."
+      },
+      "saleorder": {
+        "title": "Sale Order App",
+        "description": "ERP sales-order module: multi-step order creation, SKU & price lists, tax computation, invoice printing and FCM deep-linked notifications."
+      },
+      "purchaseorder": {
+        "title": "Purchase Order App",
+        "description": "ERP procurement app: end-to-end PO workflow, vendor & invoice modules, VAT calculation and goods-receipt with a Screen–Hook architecture."
       }
     }
   },
@@ -49,30 +57,31 @@
     "title": "skills",
     "categories": {
       "languages": "Languages",
+      "frameworks": "Frameworks",
       "databases": "Databases",
       "tools": "Tools",
-      "other": "Other",
-      "frameworks": "Frameworks"
+      "libraries": "Libraries"
     }
   },
   "About": {
     "title": "about-me",
     "greeting": "Hello, I'm {name}!",
-    "body": "I'm a self-taught front-end developer. I build accessible, responsive websites from scratch and turn them into modern, user-friendly experiences. I love combining creativity and knowledge into every project, and I'm always eager to learn the newest technologies and frameworks.",
-    "readMore": "Read more"
+    "body": "I'm a React Native developer with 1 year of experience delivering cross-platform mobile applications and business solutions. I'm skilled in React Native, TypeScript, API integration, state management and performance optimization, and I graduated in Information Technology from the Banking Academy of Vietnam (2021–2025). I'm continuously learning native mobile technologies and backend development to build scalable, high-quality applications.",
+    "readMore": "Get in touch"
   },
   "Contacts": {
     "title": "contacts",
-    "intro": "I'm interested in freelance opportunities. However, if you have another request or question, don't hesitate to contact me.",
-    "messageTitle": "Message me here",
-    "supportTitle": "Find me here",
-    "discord": "Discord",
-    "email": "Email"
+    "intro": "I'm open to mobile development opportunities. If you have a request or question, don't hesitate to reach out.",
+    "messageTitle": "Reach me here",
+    "email": "Email",
+    "phone": "Phone",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   },
   "Footer": {
-    "tagline": "Web designer and front-end developer.",
-    "media": "Media",
-    "rights": "All rights reserved.",
-    "madeBy": "Made by {name}"
+    "tagline": "React Native developer building cross-platform mobile apps.",
+    "media": "Find me",
+    "rights": "Programmers don't just write code.",
+    "madeBy": " {name}"
   }
 }

@@ -3,12 +3,13 @@
  * Translatable strings (headings, descriptions) live in `messages/*.json`.
  */
 export const profile = {
-  name: "Your Name",
+  name: "Nguyễn Hải Sơn",
+  location: "Hanoi, Vietnam",
   socials: {
-    github: "https://github.com/your-handle",
-    linkedin: "https://linkedin.com/in/your-handle",
-    twitter: "https://x.com/your-handle",
-    discord: "your-discord#0000",
-    email: "you@example.com",
+    // TODO: replace with your real GitHub / LinkedIn URLs
+    github: "https://github.com/lilMatthew",
+    linkedin: "https://www.linkedin.com/in/nguyen-lucas-haison/",
+    email: "tuppyisgod@gmail.com",
+    phone: "0976330354",
   },
 };

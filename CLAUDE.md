@@ -33,3 +33,7 @@
 - Install: `npm install` (or pnpm/bun equivalent)
 - Build/Lint: `npm run build` or `next lint`
 - Test: Use `npm run test` (Vitest/Jest) for unit flows before changing code.
+
+## Git (MANDATORY)
+- NEVER run `git commit` (or `git add` followed by a commit). The user commits manually.
+- You may stage/inspect (`git status`, `git diff`) but leave committing to the user.

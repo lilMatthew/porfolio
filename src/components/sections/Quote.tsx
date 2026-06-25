@@ -11,7 +11,7 @@ export default function Quote() {
           {t("text")}
         </blockquote>
         <figcaption className="mt-3 text-sm text-muted">
-          — {t("author")}
+          — {t("author")} —
         </figcaption>
         <span className="absolute bottom-1 right-3 text-4xl text-accent">”</span>
       </figure>

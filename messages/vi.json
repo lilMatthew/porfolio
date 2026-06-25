@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Tên của bạn — Web Designer & Lập trình viên Front-end",
-    "description": "Portfolio cá nhân — dự án, kỹ năng và kinh nghiệm."
+    "title": "lilmatthew.dev",
+    "description": "Portfolio của Nguyễn Hải Sơn — lập trình viên React Native xây dựng ứng dụng di động đa nền tảng."
   },
   "Nav": {
     "home": "trang-chủ",
@@ -15,33 +15,41 @@
     "en": "EN"
   },
   "Hero": {
-    "headline": "{name} là một <hl>web designer</hl> và <hl>lập trình viên front-end</hl>",
-    "subtitle": "Tôi xây dựng những website responsive nơi công nghệ gặp gỡ sự sáng tạo.",
+    "headline": "{name} là <hl>lập trình viên React Native</hl> xây dựng <hl>ứng dụng di động đa nền tảng</hl>",
+    "subtitle": "Tôi xây dựng các ứng dụng di động chất lượng cao với React Native & TypeScript.",
     "cta": "Liên hệ với tôi",
-    "currentlyWorking": "Đang thực hiện",
-    "currentProject": "Portfolio"
+    "currentlyWorking": "Hiện tại",
+    "currentProject": "Mobile Dev @ APUS Vietnam"
   },
   "Quote": {
-    "text": "Quyền lực càng lớn thì hóa đơn tiền điện càng cao",
-    "author": "Dr. Who"
+    "text": "Hướng tới trở thành một Mobile Engineer có thể xây dựng giải pháp end-to-end hoàn chỉnh.",
+    "author": "Nguyễn Hải Sơn"
   },
   "Projects": {
     "title": "dự-án",
     "viewAll": "Xem tất cả",
     "live": "Truy cập",
-    "cached": "Bản lưu",
+    "repo": "Mã nguồn",
     "items": {
-      "chertnodes": {
-        "title": "ChertNodes",
-        "description": "Dịch vụ hosting máy chủ Minecraft"
+      "uniclove": {
+        "title": "Uniclove",
+        "description": "Ứng dụng hẹn hò & kết nối xã hội với cơ chế ghép đôi vuốt thẻ, nhắn tin thời gian thực (WebSocket) và gói thành viên premium, xây dựng trên kiến trúc microservices."
       },
-      "protectx": {
-        "title": "ProtectX",
-        "description": "Bot chống crash cho Discord"
+      "dms": {
+        "title": "Distribution Management System",
+        "description": "Ứng dụng ERP cho bán hàng, kho vận và phân phối, với check-in hiện trường dựa trên GPS, hiển thị lộ trình và kiến trúc service phân lớp."
       },
-      "kahoot": {
-        "title": "Kahoot Answers Viewer",
-        "description": "Xem đáp án cho bài quiz Kahoot của bạn"
+      "warehouse": {
+        "title": "Warehouse Management System",
+        "description": "Ứng dụng kho đa công ty: nhập kho, soạn/giao hàng, kiểm kê và theo dõi đơn với các form tái sử dụng theo luồng quét mã."
+      },
+      "saleorder": {
+        "title": "Sale Order App",
+        "description": "Module đơn bán hàng ERP: tạo đơn nhiều bước, danh mục SKU & bảng giá, tính thuế, in hóa đơn và thông báo deep-link qua FCM."
+      },
+      "purchaseorder": {
+        "title": "Purchase Order App",
+        "description": "Ứng dụng mua hàng ERP: luồng PO đầu-cuối, module nhà cung cấp & hóa đơn, tính VAT và nhập kho với kiến trúc Screen–Hook."
       }
     }
   },
@@ -49,30 +57,31 @@
     "title": "kỹ-năng",
     "categories": {
       "languages": "Ngôn ngữ",
+      "frameworks": "Frameworks",
       "databases": "Cơ sở dữ liệu",
       "tools": "Công cụ",
-      "other": "Khác",
-      "frameworks": "Frameworks"
+      "libraries": "Thư viện"
     }
   },
   "About": {
     "title": "giới-thiệu",
     "greeting": "Xin chào, tôi là {name}!",
-    "body": "Tôi là một lập trình viên front-end tự học. Tôi xây dựng những website responsive, dễ tiếp cận từ con số 0 và biến chúng thành trải nghiệm hiện đại, thân thiện với người dùng. Tôi yêu thích việc kết hợp sự sáng tạo và kiến thức vào mỗi dự án, và luôn sẵn sàng học hỏi những công nghệ, framework mới nhất.",
-    "readMore": "Xem thêm"
+    "body": "Tôi là lập trình viên React Native với 1 năm kinh nghiệm phát triển các ứng dụng di động đa nền tảng và giải pháp doanh nghiệp. Tôi thành thạo React Native, TypeScript, tích hợp API, quản lý state và tối ưu hiệu năng, tốt nghiệp ngành Công nghệ Thông tin tại Học viện Ngân hàng (2021–2025). Tôi liên tục học hỏi công nghệ mobile native và phát triển backend để xây dựng những ứng dụng chất lượng cao, có khả năng mở rộng.",
+    "readMore": "Liên hệ"
   },
   "Contacts": {
     "title": "liên-hệ",
-    "intro": "Tôi quan tâm đến các cơ hội freelance. Tuy nhiên, nếu bạn có yêu cầu hoặc câu hỏi khác, đừng ngần ngại liên hệ với tôi.",
-    "messageTitle": "Nhắn tin cho tôi",
-    "supportTitle": "Tìm tôi tại đây",
-    "discord": "Discord",
-    "email": "Email"
+    "intro": "Tôi sẵn sàng với các cơ hội phát triển ứng dụng di động. Nếu bạn có yêu cầu hoặc câu hỏi, đừng ngần ngại liên hệ với tôi.",
+    "messageTitle": "Liên hệ với tôi qua",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   },
   "Footer": {
-    "tagline": "Web designer và lập trình viên front-end.",
-    "media": "Mạng xã hội",
-    "rights": "Đã đăng ký bản quyền.",
-    "madeBy": "Thực hiện bởi {name}"
+    "tagline": "Lập trình viên React Native xây dựng ứng dụng di động đa nền tảng.",
+    "media": "Kết nối",
+    "rights": "Lập trình viên đâu phải chỉ biết code.",
+    "madeBy": " {name}"
   }
 }

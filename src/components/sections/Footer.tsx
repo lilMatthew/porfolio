@@ -7,7 +7,7 @@ export default function Footer() {
   const socials = [
     { label: "GitHub", href: profile.socials.github },
     { label: "LinkedIn", href: profile.socials.linkedin },
-    { label: "Twitter", href: profile.socials.twitter },
+    { label: "Email", href: `mailto:${profile.socials.email}` },
   ];
 
   return (
@@ -44,7 +44,8 @@ export default function Footer() {
 
       <div className="border-t border-border">
         <p className="mx-auto max-w-5xl px-6 py-4 text-center text-xs text-muted">
-          © 2026 {profile.name}. {t("rights")} · {t("madeBy", { name: profile.name })}
+          {/* © 2026 {profile.name}. {t("rights")} · {t("madeBy", { name: profile.name })} */}
+          © 2026 {profile.name} - {t("rights")}
         </p>
       </div>
     </footer>

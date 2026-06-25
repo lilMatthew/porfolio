@@ -5,6 +5,25 @@ import { profile } from "@/data/profile";
 export default function Contacts() {
   const t = useTranslations("Contacts");
 
+  const rows = [
+    {
+      label: t("email"),
+      value: profile.socials.email,
+      href: `mailto:${profile.socials.email}`,
+    },
+    {
+      label: t("phone"),
+      value: profile.socials.phone,
+      href: `tel:${profile.socials.phone.replace(/\s/g, "")}`,
+    },
+    { label: t("github"), value: profile.socials.github, href: profile.socials.github },
+    {
+      label: t("linkedin"),
+      value: profile.socials.linkedin,
+      href: profile.socials.linkedin,
+    },
+  ];
+
   return (
     <section className="mx-auto w-full max-w-5xl px-6 py-16">
       <SectionHeading id="contacts" label={t("title")} />
@@ -14,29 +33,25 @@ export default function Contacts() {
           {t("intro")}
         </p>
 
-        <div className="space-y-4">
-          <div className="rounded-lg border border-border bg-surface p-5">
-            <h3 className="mb-3 font-bold text-foreground">
-              {t("messageTitle")}
-            </h3>
-            <dl className="space-y-2 text-sm">
-              <div className="flex justify-between gap-4">
-                <dt className="text-muted">{t("discord")}</dt>
-                <dd className="text-foreground">{profile.socials.discord}</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-muted">{t("email")}</dt>
-                <dd>
+        <div className="rounded-lg border border-border bg-surface p-5">
+          <h3 className="mb-3 font-bold text-foreground">{t("messageTitle")}</h3>
+          <dl className="space-y-2 text-sm">
+            {rows.map((row) => (
+              <div key={row.label} className="flex justify-between gap-4">
+                <dt className="text-muted">{row.label}</dt>
+                <dd className="truncate">
                   <a
-                    href={`mailto:${profile.socials.email}`}
+                    href={row.href}
+                    target={row.href.startsWith("http") ? "_blank" : undefined}
+                    rel="noopener noreferrer"
                     className="text-accent hover:underline"
                   >
-                    {profile.socials.email}
+                    {row.value}
                   </a>
                 </dd>
               </div>
-            </dl>
-          </div>
+            ))}
+          </dl>
         </div>
       </div>
     </section>
