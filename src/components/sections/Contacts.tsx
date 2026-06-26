@@ -65,7 +65,7 @@ export default function Contacts() {
     <section className="mx-auto w-full max-w-5xl px-6 py-16">
       <SectionHeading id="contacts" label={t("title")} />
 
-      <div className="grid gap-10 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex flex-col gap-5">
           <p className="max-w-md text-sm leading-relaxed text-muted">
             {t("intro")}

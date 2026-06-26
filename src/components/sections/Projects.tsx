@@ -25,7 +25,7 @@ export default function Projects() {
     <section className="mx-auto w-full max-w-5xl px-6 py-16">
       <SectionHeading id="projects" label={t("title")} />
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => {
           const text = items[project.id];
           return (

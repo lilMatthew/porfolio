@@ -23,7 +23,7 @@ export default function About() {
     <section className="mx-auto w-full max-w-5xl px-6 py-16">
       <SectionHeading id="about" label={t("title")} />
 
-      <div className="grid items-center gap-12 lg:grid-cols-2">
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="flex flex-col gap-5">
           <p className="text-lg font-semibold text-foreground">
             {t("greeting", { name: profile.name })}

@@ -20,9 +20,9 @@ export default function Hero() {
         className="glow pointer-events-none absolute -top-24 left-1/2 size-[460px] -translate-x-1/2"
       />
 
-      <div className="relative mx-auto grid w-full max-w-5xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
+      <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-12 px-6 py-20 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:py-28">
         {/* Left: copy */}
-        <div className="flex flex-col gap-6 animate-rise">
+        <div className="flex min-w-0 flex-col gap-6 animate-rise">
           <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted backdrop-blur">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-pulse-ring rounded-full bg-emerald-400" />
@@ -63,7 +63,7 @@ export default function Hero() {
         </div>
 
         {/* Right: code window */}
-        <div className="animate-float lg:justify-self-end">
+        <div className="min-w-0 animate-float lg:justify-self-end">
           <CodeWindow />
         </div>
       </div>
