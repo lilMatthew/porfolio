@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { buttonClass } from "@/components/ui/Button";
+import EmailLink from "@/components/ui/EmailLink";
 import { profile } from "@/data/profile";
 
 export default function Contacts() {
@@ -7,51 +9,100 @@ export default function Contacts() {
 
   const rows = [
     {
+      k: "@",
       label: t("email"),
       value: profile.socials.email,
       href: `mailto:${profile.socials.email}`,
+      isEmail: true,
     },
     {
+      k: "☏",
       label: t("phone"),
       value: profile.socials.phone,
       href: `tel:${profile.socials.phone.replace(/\s/g, "")}`,
     },
-    { label: t("github"), value: profile.socials.github, href: profile.socials.github },
     {
+      k: "⌥",
+      label: t("github"),
+      value: profile.socials.github,
+      href: profile.socials.github,
+    },
+    {
+      k: "in",
       label: t("linkedin"),
       value: profile.socials.linkedin,
       href: profile.socials.linkedin,
     },
   ];
 
+  const rowClass =
+    "group flex items-center gap-4 px-5 py-4 transition-colors hover:bg-surface-2";
+
+  const rowInner = (row: (typeof rows)[number]) => (
+    <>
+      <span className="grid size-9 shrink-0 place-items-center rounded-md border border-border bg-surface-2 text-sm text-accent transition-colors group-hover:border-accent/60">
+        {row.k}
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="text-xs text-muted">{row.label}</p>
+        <p className="truncate text-foreground transition-colors group-hover:text-accent">
+          {row.value}
+        </p>
+      </div>
+      <span className="text-muted transition-transform group-hover:translate-x-1 group-hover:text-accent">
+        →
+      </span>
+    </>
+  );
+
   return (
     <section className="mx-auto w-full max-w-5xl px-6 py-16">
       <SectionHeading id="contacts" label={t("title")} />
 
-      <div className="grid gap-12 lg:grid-cols-2">
-        <p className="max-w-md text-sm leading-relaxed text-muted">
-          {t("intro")}
-        </p>
+      <div className="grid gap-10 lg:grid-cols-2">
+        <div className="flex flex-col gap-5">
+          <p className="max-w-md text-sm leading-relaxed text-muted">
+            {t("intro")}
+          </p>
+          <div>
+            <EmailLink
+              email={profile.socials.email}
+              copiedLabel={t("copied")}
+              className={buttonClass("primary")}
+            >
+              {t("email")} →
+            </EmailLink>
+          </div>
+        </div>
 
-        <div className="rounded-lg border border-border bg-surface p-5">
-          <h3 className="mb-3 font-bold text-foreground">{t("messageTitle")}</h3>
-          <dl className="space-y-2 text-sm">
+        <div className="overflow-hidden rounded-xl border border-border bg-surface">
+          <div className="border-b border-border px-5 py-3">
+            <h3 className="font-bold text-foreground">{t("messageTitle")}</h3>
+          </div>
+          <ul className="divide-y divide-border">
             {rows.map((row) => (
-              <div key={row.label} className="flex justify-between gap-4">
-                <dt className="text-muted">{row.label}</dt>
-                <dd className="truncate">
+              <li key={row.label}>
+                {row.isEmail ? (
+                  <EmailLink
+                    email={profile.socials.email}
+                    copiedLabel={t("copied")}
+                    className={rowClass}
+                  >
+                    {rowInner(row)}
+                  </EmailLink>
+                ) : (
                   <a
                     href={row.href}
                     target={row.href.startsWith("http") ? "_blank" : undefined}
                     rel="noopener noreferrer"
-                    className="text-accent hover:underline"
+                    className={rowClass}
                   >
-                    {row.value}
+                    {rowInner(row)}
                   </a>
-                </dd>
-              </div>
+                )}
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
       </div>
     </section>

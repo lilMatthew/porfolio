@@ -18,6 +18,11 @@
     "headline": "{name} is a <hl>React Native developer</hl> building <hl>cross-platform mobile apps</hl>",
     "subtitle": "I craft responsive, high-quality mobile applications with React Native & TypeScript.",
     "cta": "Contact me",
+    "viewWork": "View my work",
+    "available": "Open to work",
+    "statYears": "Years of experience",
+    "statProjects": "Projects shipped",
+    "statStack": "Core stack",
     "currentlyWorking": "Currently",
     "currentProject": "Mobile Dev @ APUS Vietnam"
   },
@@ -33,7 +38,7 @@
     "items": {
       "uniclove": {
         "title": "Uniclove",
-        "description": "A dating & social app with swipe-based matching, real-time messaging (WebSocket), and premium membership, built on a microservices architecture."
+        "description": "A dating & social app with swipe-based matching, integrated UI real-time messaging (WebSocket), and premium membership, built on a microservices architecture."
       },
       "dms": {
         "title": "Distribution Management System",
@@ -67,16 +72,39 @@
     "title": "about-me",
     "greeting": "Hello, I'm {name}!",
     "body": "I'm a React Native developer with 1 year of experience delivering cross-platform mobile applications and business solutions. I'm skilled in React Native, TypeScript, API integration, state management and performance optimization, and I graduated in Information Technology from the Banking Academy of Vietnam (2021–2025). I'm continuously learning native mobile technologies and backend development to build scalable, high-quality applications.",
-    "readMore": "Get in touch"
+    "readMore": "Get in touch",
+    "hlRole": "Role",
+    "hlExperience": "Experience",
+    "hlEducation": "Education",
+    "hlLocation": "Based in",
+    "expValue": "1+ years building mobile apps",
+    "eduValue": "IT, Banking Academy of Vietnam"
   },
   "Contacts": {
     "title": "contacts",
     "intro": "I'm open to mobile development opportunities. If you have a request or question, don't hesitate to reach out.",
     "messageTitle": "Reach me here",
+    "copied": "Email copied!",
     "email": "Email",
     "phone": "Phone",
     "github": "GitHub",
     "linkedin": "LinkedIn"
+  },
+  "SendMessage": {
+    "title": "send-message",
+    "intro": "Have a project in mind or just want to say hi? Drop me a message and I'll get back to you as soon as I can.",
+    "emailLabel": "Your email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project or question...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Thanks! Your message has been sent.",
+    "invalid": "Please enter a valid email and a message.",
+    "error": "Something went wrong. Please try again or email me directly.",
+    "dialogTitle": "Thank you!",
+    "dialogMessage": "Thank you for your interest in me. I won't let you down — thank you so much.",
+    "dialogClose": "Close"
   },
   "Footer": {
     "tagline": "React Native developer building cross-platform mobile apps.",

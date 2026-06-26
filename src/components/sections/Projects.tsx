@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { AnchorButton } from "@/components/ui/Button";
@@ -7,13 +6,13 @@ import { projects } from "@/data/projects";
 
 type ProjectText = { title: string; description: string };
 
-// Deterministic gradient per card index, used when a project has no screenshot.
+// Deterministic accent gradient per card index, used for the header band.
 const gradients = [
-  "from-violet-600/40 to-fuchsia-600/20",
-  "from-sky-600/40 to-cyan-600/20",
-  "from-emerald-600/40 to-teal-600/20",
-  "from-amber-600/40 to-orange-600/20",
-  "from-rose-600/40 to-pink-600/20",
+  "from-violet-600/30 via-fuchsia-600/10",
+  "from-sky-600/30 via-cyan-600/10",
+  "from-emerald-600/30 via-teal-600/10",
+  "from-amber-600/30 via-orange-600/10",
+  "from-rose-600/30 via-pink-600/10",
 ];
 
 export default function Projects() {
@@ -32,45 +31,36 @@ export default function Projects() {
           return (
             <article
               key={project.id}
-              className="flex flex-col overflow-hidden rounded-lg border border-border bg-surface transition-colors hover:border-accent/60"
+              className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-xl hover:shadow-accent/5"
             >
-              {/* Banner: screenshot if provided, else a gradient placeholder */}
-              <div className="relative aspect-video w-full">
-                {project.image ? (
-                  <Image
-                    src={project.image}
-                    alt={text.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                ) : (
-                  <div
-                    className={`flex size-full items-center justify-center bg-gradient-to-br ${gradients[i % gradients.length]}`}
-                  >
-                    <span className="px-4 text-center text-lg font-bold text-foreground/90">
-                      {text.title}
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              <div className="flex flex-wrap items-center gap-2 border-b border-border px-4 py-3">
-                {project.tags.map((tag) => (
-                  <Tag key={tag}>{tag}</Tag>
-                ))}
-              </div>
-
-              <div className="flex flex-1 flex-col gap-2 px-4 py-4">
-                <div className="flex items-baseline justify-between gap-2">
-                  <h3 className="font-bold text-foreground">{text.title}</h3>
-                  <span className="shrink-0 text-xs text-muted">
+              {/* Header band with index + title */}
+              <div
+                className={`relative flex h-28 flex-col justify-between bg-gradient-to-br to-transparent p-4 ${gradients[i % gradients.length]}`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-xs text-muted">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="font-mono text-xs text-muted">
                     {project.period}
                   </span>
                 </div>
+                <h3 className="text-lg font-bold text-foreground transition-colors group-hover:text-accent">
+                  {text.title}
+                </h3>
+              </div>
+
+              <div className="flex flex-1 flex-col gap-3 p-4">
                 <p className="flex-1 text-sm text-muted">{text.description}</p>
+
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <Tag key={tag}>{tag}</Tag>
+                  ))}
+                </div>
+
                 {(project.liveUrl || project.repoUrl) && (
-                  <div className="mt-2 flex gap-2">
+                  <div className="mt-1 flex gap-2">
                     {project.liveUrl && (
                       <AnchorButton href={project.liveUrl} variant="ghost">
                         {t("live")} →

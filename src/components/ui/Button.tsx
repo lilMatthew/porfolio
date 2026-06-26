@@ -12,6 +12,11 @@ const variants: Record<Variant, string> = {
     "border border-border bg-surface text-foreground hover:border-accent hover:text-accent",
 };
 
+/** Shared button class string — reuse for non-button elements that need the look. */
+export function buttonClass(variant: Variant = "ghost", className = "") {
+  return `${base} ${variants[variant]} ${className}`;
+}
+
 /** Anchor/link-styled button. Uses the locale-aware `Link`. */
 export function LinkButton({
   variant = "ghost",

@@ -1,13 +1,11 @@
 /**
  * Project metadata. The `id` maps to translatable title/description under the
  * `Projects.items.<id>` namespace in `messages/*.json`. Tags/period are not
- * translated. Add an `image` (e.g. "/portfolio/uniclove.png") to show a real
- * screenshot; otherwise a generated gradient banner is rendered.
+ * translated. Cards render a generated gradient header (no screenshots).
  */
 export type Project = {
   id: string;
   period: string;
-  image?: string;
   tags: string[];
   liveUrl?: string;
   repoUrl?: string;

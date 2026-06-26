@@ -18,6 +18,11 @@
     "headline": "{name} là <hl>lập trình viên React Native</hl> xây dựng <hl>ứng dụng di động đa nền tảng</hl>",
     "subtitle": "Tôi xây dựng các ứng dụng di động chất lượng cao với React Native & TypeScript.",
     "cta": "Liên hệ với tôi",
+    "viewWork": "Xem dự án",
+    "available": "Sẵn sàng nhận việc",
+    "statYears": "Năm kinh nghiệm",
+    "statProjects": "Dự án đã làm",
+    "statStack": "Công nghệ chính",
     "currentlyWorking": "Hiện tại",
     "currentProject": "Mobile Dev @ APUS Vietnam"
   },
@@ -33,7 +38,7 @@
     "items": {
       "uniclove": {
         "title": "Uniclove",
-        "description": "Ứng dụng hẹn hò & kết nối xã hội với cơ chế ghép đôi vuốt thẻ, nhắn tin thời gian thực (WebSocket) và gói thành viên premium, xây dựng trên kiến trúc microservices."
+        "description": "Ứng dụng hẹn hò & kết nối xã hội với cơ chế ghép đôi vuốt thẻ,tham gia thực hiện UI nhắn tin thời gian thực (WebSocket) và gói thành viên premium, xây dựng trên kiến trúc microservices."
       },
       "dms": {
         "title": "Distribution Management System",
@@ -67,16 +72,39 @@
     "title": "giới-thiệu",
     "greeting": "Xin chào, tôi là {name}!",
     "body": "Tôi là lập trình viên React Native với 1 năm kinh nghiệm phát triển các ứng dụng di động đa nền tảng và giải pháp doanh nghiệp. Tôi thành thạo React Native, TypeScript, tích hợp API, quản lý state và tối ưu hiệu năng, tốt nghiệp ngành Công nghệ Thông tin tại Học viện Ngân hàng (2021–2025). Tôi liên tục học hỏi công nghệ mobile native và phát triển backend để xây dựng những ứng dụng chất lượng cao, có khả năng mở rộng.",
-    "readMore": "Liên hệ"
+    "readMore": "Liên hệ",
+    "hlRole": "Vai trò",
+    "hlExperience": "Kinh nghiệm",
+    "hlEducation": "Học vấn",
+    "hlLocation": "Địa điểm",
+    "expValue": "1+ năm xây dựng ứng dụng di động",
+    "eduValue": "CNTT, Học viện Ngân hàng"
   },
   "Contacts": {
     "title": "liên-hệ",
     "intro": "Tôi sẵn sàng với các cơ hội phát triển ứng dụng di động. Nếu bạn có yêu cầu hoặc câu hỏi, đừng ngần ngại liên hệ với tôi.",
     "messageTitle": "Liên hệ với tôi qua",
+    "copied": "Đã sao chép email!",
     "email": "Email",
     "phone": "Điện thoại",
     "github": "GitHub",
     "linkedin": "LinkedIn"
+  },
+  "SendMessage": {
+    "title": "gửi-lời-nhắn",
+    "intro": "Bạn có dự án hoặc chỉ muốn chào hỏi? Hãy để lại lời nhắn, tôi sẽ phản hồi sớm nhất có thể.",
+    "emailLabel": "Email của bạn",
+    "emailPlaceholder": "ban@example.com",
+    "messageLabel": "Nội dung",
+    "messagePlaceholder": "Hãy cho tôi biết về dự án hoặc câu hỏi của bạn...",
+    "send": "Gửi lời nhắn",
+    "sending": "Đang gửi...",
+    "success": "Cảm ơn! Lời nhắn của bạn đã được gửi.",
+    "invalid": "Vui lòng nhập email hợp lệ và nội dung.",
+    "error": "Có lỗi xảy ra. Vui lòng thử lại hoặc email trực tiếp cho tôi.",
+    "dialogTitle": "Cảm ơn bạn!",
+    "dialogMessage": "Cảm ơn bạn đã quan tâm đến tôi. Tôi sẽ không làm bạn thất vọng, cảm ơn bạn rất nhiều.",
+    "dialogClose": "Đóng"
   },
   "Footer": {
     "tagline": "Lập trình viên React Native xây dựng ứng dụng di động đa nền tảng.",
