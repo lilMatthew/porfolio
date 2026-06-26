@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { LinkButton } from "@/components/ui/Button";
+import { AnchorButton } from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
             {t("available")}
           </span>
 
-          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight break-words sm:text-4xl lg:text-5xl">
             {t.rich("headline", {
               name: profile.name,
               hl: (chunks) => <span className="text-gradient">{chunks}</span>,
@@ -41,20 +41,20 @@ export default function Hero() {
           <p className="max-w-md text-muted">{t("subtitle")}</p>
 
           <div className="flex flex-wrap gap-3">
-            <LinkButton href="/#contacts" variant="primary">
+            <AnchorButton href="#contacts" variant="primary">
               {t("cta")} ↓
-            </LinkButton>
-            <LinkButton href="/#projects" variant="ghost">
+            </AnchorButton>
+            <AnchorButton href="#projects" variant="ghost">
               {t("viewWork")} →
-            </LinkButton>
+            </AnchorButton>
           </div>
 
           {/* Stats */}
-          <dl className="mt-2 flex gap-8">
+          <dl className="mt-2 flex flex-wrap gap-x-8 gap-y-4">
             {stats.map((s) => (
               <div key={s.label} className="flex flex-col">
                 <dt className="order-2 text-xs text-muted">{s.label}</dt>
-                <dd className="order-1 text-2xl font-bold text-foreground">
+                <dd className="order-1 text-xl font-bold text-foreground sm:text-2xl">
                   {s.value}
                 </dd>
               </div>
@@ -123,8 +123,8 @@ function CodeWindow() {
       </pre>
 
       {/* Currently-working footer pill */}
-      <div className="flex items-center gap-2 border-t border-border px-5 py-3 text-xs">
-        <span className="size-2 rounded-full bg-accent" />
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-border px-5 py-3 text-xs">
+        <span className="size-2 shrink-0 rounded-full bg-accent" />
         <span className="text-muted">{t("currentlyWorking")}</span>
         <span className="font-semibold text-foreground">
           {t("currentProject")}

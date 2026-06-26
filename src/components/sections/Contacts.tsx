@@ -2,6 +2,12 @@ import { useTranslations } from "next-intl";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { buttonClass } from "@/components/ui/Button";
 import EmailLink from "@/components/ui/EmailLink";
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  MailIcon,
+  PhoneIcon,
+} from "@/components/ui/icons";
 import { profile } from "@/data/profile";
 
 export default function Contacts() {
@@ -9,26 +15,26 @@ export default function Contacts() {
 
   const rows = [
     {
-      k: "@",
+      icon: <MailIcon />,
       label: t("email"),
       value: profile.socials.email,
       href: `mailto:${profile.socials.email}`,
       isEmail: true,
     },
     {
-      k: "☏",
+      icon: <PhoneIcon />,
       label: t("phone"),
       value: profile.socials.phone,
       href: `tel:${profile.socials.phone.replace(/\s/g, "")}`,
     },
     {
-      k: "⌥",
+      icon: <GitHubIcon />,
       label: t("github"),
       value: profile.socials.github,
       href: profile.socials.github,
     },
     {
-      k: "in",
+      icon: <LinkedInIcon />,
       label: t("linkedin"),
       value: profile.socials.linkedin,
       href: profile.socials.linkedin,
@@ -40,8 +46,8 @@ export default function Contacts() {
 
   const rowInner = (row: (typeof rows)[number]) => (
     <>
-      <span className="grid size-9 shrink-0 place-items-center rounded-md border border-border bg-surface-2 text-sm text-accent transition-colors group-hover:border-accent/60">
-        {row.k}
+      <span className="grid size-9 shrink-0 place-items-center rounded-md border border-border bg-surface-2 text-accent transition-colors group-hover:border-accent/60">
+        {row.icon}
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-xs text-muted">{row.label}</p>

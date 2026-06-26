@@ -1,13 +1,22 @@
 import { useTranslations } from "next-intl";
+import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/ui/icons";
 import { profile } from "@/data/profile";
 
 export default function Footer() {
   const t = useTranslations("Footer");
 
   const socials = [
-    { label: "GitHub", href: profile.socials.github },
-    { label: "LinkedIn", href: profile.socials.linkedin },
-    { label: "Email", href: `mailto:${profile.socials.email}` },
+    { label: "GitHub", href: profile.socials.github, icon: <GitHubIcon /> },
+    {
+      label: "LinkedIn",
+      href: profile.socials.linkedin,
+      icon: <LinkedInIcon />,
+    },
+    {
+      label: "Email",
+      href: `mailto:${profile.socials.email}`,
+      icon: <MailIcon />,
+    },
   ];
 
   return (
@@ -32,8 +41,9 @@ export default function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-accent"
+                  className="flex items-center gap-2 transition-colors hover:text-accent"
                 >
+                  {s.icon}
                   {s.label}
                 </a>
               </li>

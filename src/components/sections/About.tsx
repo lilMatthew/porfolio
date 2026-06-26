@@ -1,16 +1,22 @@
 import { useTranslations } from "next-intl";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { LinkButton } from "@/components/ui/Button";
+import { AnchorButton } from "@/components/ui/Button";
+import {
+  BriefcaseIcon,
+  ClockIcon,
+  GraduationIcon,
+  MapPinIcon,
+} from "@/components/ui/icons";
 import { profile } from "@/data/profile";
 
 export default function About() {
   const t = useTranslations("About");
 
   const highlights = [
-    { k: "//", label: t("hlRole"), value: profile.role },
-    { k: "λ", label: t("hlExperience"), value: t("expValue") },
-    { k: "✦", label: t("hlEducation"), value: t("eduValue") },
-    { k: "⌖", label: t("hlLocation"), value: profile.location },
+    { icon: <BriefcaseIcon />, label: t("hlRole"), value: profile.role },
+    { icon: <ClockIcon />, label: t("hlExperience"), value: t("expValue") },
+    { icon: <GraduationIcon />, label: t("hlEducation"), value: t("eduValue") },
+    { icon: <MapPinIcon />, label: t("hlLocation"), value: profile.location },
   ];
 
   return (
@@ -24,9 +30,9 @@ export default function About() {
           </p>
           <p className="text-sm leading-relaxed text-muted">{t("body")}</p>
           <div>
-            <LinkButton href="/#contacts" variant="ghost">
+            <AnchorButton href="#contacts" variant="ghost">
               {t("readMore")} →
-            </LinkButton>
+            </AnchorButton>
           </div>
         </div>
 
@@ -40,7 +46,7 @@ export default function About() {
                 className="group flex items-center gap-4 px-5 py-4 transition-colors hover:bg-surface-2"
               >
                 <span className="grid size-9 shrink-0 place-items-center rounded-md border border-border bg-surface-2 text-accent transition-colors group-hover:border-accent/60">
-                  {h.k}
+                  {h.icon}
                 </span>
                 <div className="min-w-0">
                   <p className="text-xs text-muted">{h.label}</p>
