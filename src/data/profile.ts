@@ -18,7 +18,7 @@ export const profile = {
     // TODO: replace with your real GitHub / LinkedIn URLs
     github: "https://github.com/lilMatthew",
     linkedin: "https://www.linkedin.com/in/nguyen-lucas-haison/",
-    email: "tuppyisgod@gmail.com",
+    email: "nguyenhaisonwork@gmail.com",
     phone: "0976330354",
   },
 };
