@@ -9,6 +9,8 @@ export type Project = {
   tags: string[];
   liveUrl?: string;
   repoUrl?: string;
+  playStoreUrl?: string;
+  appStoreUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -36,5 +38,14 @@ export const projects: Project[] = [
     id: "purchaseorder",
     period: "01/2026 – 04/2026",
     tags: ["React Native", "TypeScript", "Axios", "MMKV"],
+  },
+  {
+    id: "decallfs",
+    period: "09/2026 – 10/2026",
+    tags: ["Flutter", "Dart", "BLoC", "Dio", "Java"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=jp.co.gigxit.add_value",
+    appStoreUrl:
+      "https://apps.apple.com/jp/app/gig-mypage-for-decall/id1568033320",
   },
 ];

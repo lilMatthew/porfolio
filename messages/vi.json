@@ -35,6 +35,8 @@
     "viewAll": "Xem tất cả",
     "live": "Truy cập",
     "repo": "Mã nguồn",
+    "playStore": "Google Play",
+    "appStore": "App Store",
     "items": {
       "uniclove": {
         "title": "Uniclove",
@@ -55,6 +57,10 @@
       "purchaseorder": {
         "title": "Purchase Order App",
         "description": "Ứng dụng mua hàng ERP: luồng PO đầu-cuối, module nhà cung cấp & hóa đơn, tính VAT và nhập kho với kiến trúc Screen–Hook."
+      },
+      "decallfs": {
+        "title": "Decall FS",
+        "description": "Ứng dụng nghiệp vụ hiện trường cho khách hàng Nhật (Flutter, iOS/Android): chuyển đổi chức năng từ hệ thống cũ, phát triển lịch sử mail ủy thác kèm xem PDF, báo cáo WEB, đăng ký vật tư và đơn ngừng dùng PC; xử lý lỗi font CP932 và phát hành lên App Store/Google Play."
       }
     }
   },

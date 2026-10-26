@@ -35,6 +35,8 @@
     "viewAll": "View all",
     "live": "Live",
     "repo": "Code",
+    "playStore": "Google Play",
+    "appStore": "App Store",
     "items": {
       "uniclove": {
         "title": "Uniclove",
@@ -55,6 +57,10 @@
       "purchaseorder": {
         "title": "Purchase Order App",
         "description": "ERP procurement app: end-to-end PO workflow, vendor & invoice modules, VAT calculation and goods-receipt with a Screen–Hook architecture."
+      },
+      "decallfs": {
+        "title": "Decall FS",
+        "description": "Field-service app for a Japanese client (Flutter, iOS/Android): migrated features from a legacy system, built request-mail history with PDF viewer, WEB reports, equipment requests and PC non-use applications; fixed CP932 garbled text and shipped to the App Store/Google Play."
       }
     }
   },

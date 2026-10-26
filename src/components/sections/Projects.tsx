@@ -28,6 +28,14 @@ export default function Projects() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => {
           const text = items[project.id];
+          const links = [
+            { href: project.liveUrl, label: `${t("live")} →` },
+            { href: project.repoUrl, label: `${t("repo")} ↗` },
+            { href: project.playStoreUrl, label: `${t("playStore")} ↗` },
+            { href: project.appStoreUrl, label: `${t("appStore")} ↗` },
+          ].filter((link): link is { href: string; label: string } =>
+            Boolean(link.href),
+          );
           return (
             <article
               key={project.id}
@@ -59,18 +67,19 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {(project.liveUrl || project.repoUrl) && (
-                  <div className="mt-1 flex gap-2">
-                    {project.liveUrl && (
-                      <AnchorButton href={project.liveUrl} variant="ghost">
-                        {t("live")} →
+                {links.length > 0 && (
+                  <div className="mt-1 flex flex-wrap gap-2">
+                    {links.map((link) => (
+                      <AnchorButton
+                        key={link.href}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="ghost"
+                      >
+                        {link.label}
                       </AnchorButton>
-                    )}
-                    {project.repoUrl && (
-                      <AnchorButton href={project.repoUrl} variant="ghost">
-                        {t("repo")} ↗
-                      </AnchorButton>
-                    )}
+                    ))}
                   </div>
                 )}
               </div>
