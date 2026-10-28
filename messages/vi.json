@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "lilmatthew.dev",
-    "description": "Portfolio của Nguyễn Hải Sơn — lập trình viên React Native xây dựng ứng dụng di động đa nền tảng."
+    "description": "Portfolio của Nguyễn Hải Sơn — lập trình viên Mobile xây dựng ứng dụng di động đa nền tảng với Flutter & React Native."
   },
   "Nav": {
     "home": "trang-chủ",
@@ -15,8 +15,8 @@
     "en": "EN"
   },
   "Hero": {
-    "headline": "{name} là <hl>lập trình viên React Native</hl> xây dựng <hl>ứng dụng di động đa nền tảng</hl>",
-    "subtitle": "Tôi xây dựng các ứng dụng di động chất lượng cao với React Native & TypeScript.",
+    "headline": "{name} là <hl>Mobile Developer</hl> xây dựng <hl>ứng dụng di động đa nền tảng</hl>",
+    "subtitle": "Tôi xây dựng ứng dụng di động chất lượng cao với Flutter & React Native, cùng backend Spring Boot & MySQL.",
     "cta": "Liên hệ với tôi",
     "viewWork": "Xem dự án",
     "available": "Sẵn sàng nhận việc",
@@ -24,7 +24,7 @@
     "statProjects": "Dự án đã làm",
     "statStack": "Công nghệ chính",
     "currentlyWorking": "Hiện tại",
-    "currentProject": "Mobile Dev @ APUS Vietnam"
+    "currentProject": "Mobile Developer @ Kaopiz"
   },
   "Quote": {
     "text": "Hướng tới trở thành một Mobile Engineer có thể xây dựng giải pháp end-to-end hoàn chỉnh.",
@@ -77,13 +77,13 @@
   "About": {
     "title": "giới-thiệu",
     "greeting": "Xin chào, tôi là {name}!",
-    "body": "Tôi là lập trình viên React Native với 1 năm kinh nghiệm phát triển các ứng dụng di động đa nền tảng và giải pháp doanh nghiệp. Tôi thành thạo React Native, TypeScript, tích hợp API, quản lý state và tối ưu hiệu năng, tốt nghiệp ngành Công nghệ Thông tin tại Học viện Ngân hàng (2021–2025). Tôi liên tục học hỏi công nghệ mobile native và phát triển backend để xây dựng những ứng dụng chất lượng cao, có khả năng mở rộng.",
+    "body": "Tôi là Mobile Developer tại Kaopiz với hơn 2 năm kinh nghiệm phát triển ứng dụng di động đa nền tảng và giải pháp doanh nghiệp cho khách hàng Nhật Bản. Tôi làm việc với React Native (TypeScript) và Flutter (Dart), thành thạo tích hợp API, quản lý state và tối ưu hiệu năng; đồng thời tham gia phát triển backend với Spring Boot và MySQL. Tôi tốt nghiệp ngành Công nghệ Thông tin tại Học viện Ngân hàng (2021–2025) và luôn học hỏi để xây dựng những ứng dụng chất lượng cao, có khả năng mở rộng.",
     "readMore": "Liên hệ",
     "hlRole": "Vai trò",
     "hlExperience": "Kinh nghiệm",
     "hlEducation": "Học vấn",
     "hlLocation": "Địa điểm",
-    "expValue": "1+ năm xây dựng ứng dụng di động",
+    "expValue": "2+ năm xây dựng ứng dụng di động",
     "eduValue": "CNTT, Học viện Ngân hàng"
   },
   "Contacts": {
@@ -113,7 +113,7 @@
     "dialogClose": "Đóng"
   },
   "Footer": {
-    "tagline": "Lập trình viên React Native xây dựng ứng dụng di động đa nền tảng.",
+    "tagline": "Mobile Developer xây dựng ứng dụng di động đa nền tảng với Flutter & React Native.",
     "media": "Kết nối",
     "rights": "Lập trình viên đâu phải chỉ biết code.",
     "madeBy": " {name}"

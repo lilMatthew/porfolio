@@ -8,12 +8,12 @@ export type SkillGroup = {
 };
 
 export const skills: SkillGroup[] = [
-  { category: "languages", items: ["JavaScript", "TypeScript"] },
+  { category: "languages", items: ["Dart", "TypeScript", "JavaScript", "Java"] },
   {
     category: "frameworks",
-    items: ["React Native", "NestJS"],
+    items: ["Flutter", "React Native", "Spring Boot", "NestJS"],
   },
-  { category: "databases", items: ["PostgreSQL", "Firebase"] },
+  { category: "databases", items: ["MySQL", "PostgreSQL", "Firebase"] },
   {
     category: "tools",
     items: ["Git", "GitHub", "GitLab", "Postman", "Figma", "Swagger"],

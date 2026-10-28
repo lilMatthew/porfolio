@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "lilmatthew.dev",
-    "description": "Portfolio of Nguyễn Hải Sơn — React Native developer building cross-platform mobile apps."
+    "description": "Portfolio of Nguyễn Hải Sơn — Mobile developer building cross-platform apps with Flutter & React Native."
   },
   "Nav": {
     "home": "home",
@@ -15,8 +15,8 @@
     "en": "EN"
   },
   "Hero": {
-    "headline": "{name} is a <hl>React Native developer</hl> building <hl>cross-platform mobile apps</hl>",
-    "subtitle": "I craft responsive, high-quality mobile applications with React Native & TypeScript.",
+    "headline": "{name} is a <hl>Mobile Developer</hl> building <hl>cross-platform mobile apps</hl>",
+    "subtitle": "I craft high-quality mobile apps with Flutter & React Native, backed by Spring Boot & MySQL.",
     "cta": "Contact me",
     "viewWork": "View my work",
     "available": "Open to work",
@@ -24,7 +24,7 @@
     "statProjects": "Projects shipped",
     "statStack": "Core stack",
     "currentlyWorking": "Currently",
-    "currentProject": "Mobile Dev @ APUS Vietnam"
+    "currentProject": "Mobile Developer @ Kaopiz"
   },
   "Quote": {
     "text": "Aspiring to become a Mobile Engineer capable of delivering end-to-end solutions.",
@@ -77,13 +77,13 @@
   "About": {
     "title": "about-me",
     "greeting": "Hello, I'm {name}!",
-    "body": "I'm a React Native developer with 1 year of experience delivering cross-platform mobile applications and business solutions. I'm skilled in React Native, TypeScript, API integration, state management and performance optimization, and I graduated in Information Technology from the Banking Academy of Vietnam (2021–2025). I'm continuously learning native mobile technologies and backend development to build scalable, high-quality applications.",
+    "body": "I'm a Mobile Developer at Kaopiz with over 2 years of experience delivering cross-platform mobile applications and business solutions for Japanese clients. I work with React Native (TypeScript) and Flutter (Dart), with solid skills in API integration, state management and performance optimization, and I also contribute to backend development with Spring Boot and MySQL. I graduated in Information Technology from the Banking Academy of Vietnam (2021–2025) and keep learning to build scalable, high-quality applications.",
     "readMore": "Get in touch",
     "hlRole": "Role",
     "hlExperience": "Experience",
     "hlEducation": "Education",
     "hlLocation": "Based in",
-    "expValue": "1+ years building mobile apps",
+    "expValue": "2+ years building mobile apps",
     "eduValue": "IT, Banking Academy of Vietnam"
   },
   "Contacts": {
@@ -113,7 +113,7 @@
     "dialogClose": "Close"
   },
   "Footer": {
-    "tagline": "React Native developer building cross-platform mobile apps.",
+    "tagline": "Mobile developer building cross-platform apps with Flutter & React Native.",
     "media": "Find me",
     "rights": "Programmers don't just write code.",
     "madeBy": " {name}"

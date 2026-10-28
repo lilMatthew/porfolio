@@ -4,16 +4,16 @@
  */
 export const profile = {
   name: "Nguyễn Hải Sơn",
-  role: "React Native Developer",
+  role: "Mobile Developer",
   location: "Hanoi, Vietnam",
   // Headline stats shown in the hero. Values are non-translatable.
   stats: {
-    years: "1+",
-    projects: "5+",
-    stack: "React Native",
+    years: "2+",
+    projects: "6+",
+    stack: "Flutter & React Native",
   },
   // Tech shown in the hero "code window" snippet.
-  stack: ["React Native", "TypeScript", "Nestjs"],
+  stack: ["Flutter", "React Native", "Spring Boot"],
   socials: {
     // TODO: replace with your real GitHub / LinkedIn URLs
     github: "https://github.com/lilMatthew",
